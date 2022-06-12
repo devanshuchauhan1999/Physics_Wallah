@@ -24,7 +24,7 @@ class MyAdapter(private val context: Context, private val userList: List<MyDataI
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        var itemview = LayoutInflater.from(context).inflate(R.layout.row_items,parent,false)
+        val itemview = LayoutInflater.from(context).inflate(R.layout.row_items,parent,false)
 
         return ViewHolder(itemview)
     }
